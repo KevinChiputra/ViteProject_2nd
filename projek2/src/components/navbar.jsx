@@ -10,7 +10,7 @@ const navbar = () => {
     }
 
   return (
-    <div className='flex w-full p-4 justify-between lg:py-8 md:px-12 bg-white fixed z-10'>
+    <div className='flex w-full p-4 justify-between lg:py-8 lg:px-20 md:px-12 bg-white fixed z-10'>
 
             <div className='flex items-center'>
                 <box-icon name='search-alt-2' size='md'></box-icon>

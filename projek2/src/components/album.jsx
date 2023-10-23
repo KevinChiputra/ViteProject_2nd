@@ -5,7 +5,7 @@ import Img2 from '../assets/img4.jpg'
 
 const album = () => {
   return (
-    <div className='flex flex-col items-center bg-gray p-4 md:p-12 w-full'>
+    <div className='flex flex-col items-center bg-gray p-4 md:p-12 lg:px-20 w-full'>
         
         <p className='text-4xl md:text-6xl font-[Playfair]'>Album</p>
 

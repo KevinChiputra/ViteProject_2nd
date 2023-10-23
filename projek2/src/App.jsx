@@ -6,6 +6,7 @@ import Navbar from './components/navbar'
 import Image from './components/image'
 import Footer from './components/footer'
 import Album from './components/album'
+import Aboutus from './components/aboutPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,9 +14,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
+      {/* <Home />
       <Image />
-      <Album />
+      <Album /> */}
+      
+      <Aboutus />
       <Footer />
     </>
   )
