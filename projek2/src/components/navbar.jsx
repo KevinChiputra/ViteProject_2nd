@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import { useNavigate } from 'react-router-dom'
 
 const navbar = () => {    
 
@@ -8,18 +8,20 @@ const navbar = () => {
     const handleNav = () =>{
         setNav(!nav)
     }
+    
+    const navigate = useNavigate()
 
   return (
-    <div className='flex w-full p-4 justify-between lg:py-8 lg:px-20 md:px-12 bg-white fixed z-10'>
+    <div className='flex w-full p-4 justify-between lg:py-8 lg:px-20 md:px-12 bg-white sticky top-0'>
 
             <div className='flex items-center'>
                 <box-icon name='search-alt-2' size='md'></box-icon>
             </div>
 
             <ul className='hidden md:flex items-center'>
-                <li className='pr-8 text-xl text-black'>Home</li>
-                <li className='pr-8 text-xl text-black'>About</li>
-                <li className='text-xl text-black'>Contact</li>
+                <li className='pr-8 text-xl text-black cursor-pointer' onClick={() => navigate('/')}>Home</li>
+                <li className='pr-8 text-xl text-black cursor-pointer' onClick={() => navigate('/AboutPage')}>About</li>
+                <li className='text-xl text-black cursor-pointer' onClick={() => navigate('/ContactPage')}>Contact</li>
             </ul>
             
 
@@ -35,9 +37,9 @@ const navbar = () => {
                 </div>
 
                 <ul className='pt-20'>
-                    <li className='pt-4 pb-4 text-2xl text-black border-b-2 border-black'>Home</li>
-                    <li className='pt-4 pb-4 text-2xl text-black border-b-2 border-black'>About</li>
-                    <li className='pt-4 pb-4 text-2xl text-black border-b-2 border-black'>Contact</li>
+                    <li className='pt-4 pb-4 text-2xl text-black border-b-2 border-black' onClick={() => navigate('/')}>Home</li>
+                    <li className='pt-4 pb-4 text-2xl text-black border-b-2 border-black' onClick={() => navigate('/AboutPage')}>About</li>
+                    <li className='pt-4 pb-4 text-2xl text-black border-b-2 border-black' onClick={() => navigate('/ContactPage')}>Contact</li>
                 </ul>
             </div>
     </div>
