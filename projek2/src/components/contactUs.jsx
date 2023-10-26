@@ -23,7 +23,7 @@ const contactUs = () => {
 
   return (
 
-    <div className='w-full h-[650px] md:h-[700px] lg:h-screen flex items-center justify-center bg-[url("src/assets/contactUs_bg.jpg")] bg-center bg-cover bg-blend-darken px-4 md:px-12 lg:px-20'>
+    <div className='w-full h-[650px] md:h-[700px] lg:h-screen flex items-center justify-center bg-[url("src/assets/contactUs_bg.jpg")] bg-center bg-cover bg-blend-darken px-4 md:px-12 lg:px-20 bg-gray'>
       
       <div className="w-full lg:w-[70%] h-[500px] bg-white rounded-md shadow-xl flex">
         {/* img */}
